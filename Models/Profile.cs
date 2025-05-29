@@ -13,6 +13,8 @@ public class Profile
     public string Phone { get; set; } = string.Empty;
     public string AddressDetail { get; set; } = string.Empty;
 
+    // one-to-one relationship with User
     public User User { get; set; } = null!;
+    // one-to-one relationship with District
     public District District { get; set; } = null!;
 }
