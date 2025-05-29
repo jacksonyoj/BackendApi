@@ -1,0 +1,12 @@
+dotnet tool install --global dotnet-ef
+dotnet add package Pomelo.EntityFrameworkCore.MySql
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 9.0.0-preview.3.efcore.9.0.0
+dotnet add package Microsoft.EntityFrameworkCore.Design
+
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add package BCrypt.Net-Next
+
+在 appsettings.json 加入：
+"ConnectionStrings": {
+  "DefaultConnection": "server=localhost;port=3306;database=MyDb;user=root;password=你的密碼;"
+}
